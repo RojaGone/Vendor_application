@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/event_item_bg">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:text="My Profile"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/artifika"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myprofile_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="310dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Last Name :"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myprofile_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="250dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="First Name :"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myprofile_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="430dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Address :"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myprofile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="490dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Phone Number :"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myprofile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="370dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Email :"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myprofile_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="550dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Gender :"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myprofile_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/light_black_strock"
+                android:elevation="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Password :"
+                android:textSize="15dp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/myprofile_birthday"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="670dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginBottom="250dp"-->
+<!--                android:background="@drawable/light_black_strock"-->
+<!--                android:elevation="4dp"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:paddingStart="15dp"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:paddingTop="15dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:paddingBottom="15dp"-->
+<!--                android:text="Date Of Birth :"-->
+<!--                android:textSize="15dp" />-->
+
+            <TextView
+                android:id="@+id/myprofile_lname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="310dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Bethu" />
+
+            <TextView
+                android:id="@+id/myprofile_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="430dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Dindoli,Surat." />
+
+            <TextView
+                android:id="@+id/myprofile_fname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="250dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Purvi" />
+
+            <TextView
+                android:id="@+id/myprofile_phone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="490dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="9925299814" />
+
+            <TextView
+                android:id="@+id/myprofile_email1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="370dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="abc123@gmail.com" />
+
+            <TextView
+                android:id="@+id/myprofile_gender1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Male" />
+
+            <TextView
+                android:id="@+id/myprofile_password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="abc#123" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/myprofile_birthday1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="200dp"-->
+<!--                android:layout_marginTop="670dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:elevation="4dp"-->
+<!--                android:paddingStart="15dp"-->
+<!--                android:paddingTop="15dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:paddingBottom="15dp"-->
+<!--                android:text="11-03-1998" />-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="138dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"
+                android:src="@drawable/decorate"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <Button
+                android:id="@+id/editProfile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="670dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"
+                android:text="EDIT PROFILE" />
+            <Button
+                android:id="@+id/editProfile_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="430dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"
+                android:text="EDIT PROFILE" />
+        </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

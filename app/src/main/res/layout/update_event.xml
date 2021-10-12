@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/event_item_bg">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="-8dp"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/artifika"
+                    android:text="Update Event"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints="Choose Service"
+                    android:elevation="1dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/UE_select_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="select Event"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="55dp"-->
+                <!--                    android:layout_alignParentStart="true"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:layout_alignParentTop="true"-->
+                <!--                    android:layout_marginStart="320dp"-->
+                <!--                    android:layout_marginEnd="20dp"-->
+                <!--                    android:layout_marginTop="80dp"-->
+                <!--                    android:elevation="10dp"-->
+                <!--                    android:src="@drawable/ic_down_arrow"-->
+                <!--                    app:srcCompat="@drawable/ic_down_arrow"/>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:hint="Decoration Design Name"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/UE_decoration_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Start Price"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/UE_event_start_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Upto Price"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/UE_event_upto_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/UE_pic_image_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="340dp"
+                    android:layout_marginEnd="100dp"
+                    android:background="@drawable/light_black_strock"
+                    android:text="Choose Decoration Image"
+                    android:textColor="@color/blue"
+                    android:elevation="4dp"/>
+
+                <ImageView
+                    android:id="@+id/UE_pic_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="340dp"
+                    android:layout_marginStart="310dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/ic_profile"
+                    android:background="@drawable/light_black_strock"
+                    android:elevation="4dp"
+                    />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="330dp"
+                    android:layout_marginTop="410dp"
+                    app:srcCompat="@drawable/ic_right_arrow" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="410dp"
+                    android:layout_marginStart="60dp"
+                    android:text="Out of station services"/>
+                <RadioGroup
+                    android:id="@+id/UE_station_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="430dp"
+                    android:orientation="horizontal"
+                    android:elevation="2dp">
+
+                    <RadioButton
+                        android:id="@+id/UE_radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/lightBlack"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/UE_radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/lightBlack"
+                        android:text="No" />
+
+                </RadioGroup>
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="330dp"
+                    android:layout_marginTop="480dp"
+                    app:srcCompat="@drawable/ic_right_arrow" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="480dp"
+                    android:layout_marginStart="60dp"
+                    android:text="Customized designs with designers"/>
+                <RadioGroup
+                    android:id="@+id/UE_designers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="500dp"
+                    android:orientation="horizontal"
+                    android:elevation="2dp">
+
+                    <RadioButton
+                        android:id="@+id/UE_radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/lightBlack"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/UE_radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/lightBlack"
+                        android:text="No" />
+
+                </RadioGroup>
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="330dp"
+                    android:layout_marginTop="550dp"
+                    app:srcCompat="@drawable/ic_right_arrow" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="550dp"
+                    android:layout_marginStart="60dp"
+                    android:text="Stay and Travel"/>
+                <RadioGroup
+                    android:id="@+id/UE_stay_travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="570dp"
+                    android:orientation="horizontal"
+                    android:elevation="2dp">
+
+                    <RadioButton
+                        android:id="@+id/UE_radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/lightBlack"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/UE_radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/lightBlack"
+                        android:text="No" />
+
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/updateEvent_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="670dp"
+                    android:layout_marginEnd="120dp"
+                    android:layout_marginBottom="1000dp"
+                    android:background="@drawable/light_black_strock"
+                    android:text="update"
+                    android:textColor="@color/blue"
+                    android:elevation="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/UE_prog_relay"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginEnd="150dp"
+                    android:elevation="8dp">
+
+                    <ProgressBar
+                        android:id="@+id/UE_progressbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:indeterminateTint="@color/blue" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

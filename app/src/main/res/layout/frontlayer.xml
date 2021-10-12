@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/event_item_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/cantata_one"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/cantata_one"
+            android:text="to vendor panel"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/svo_fname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:text="Today Orders :"
+            android:textSize="17dp"
+            android:textColor="@color/thickBrown"
+            android:padding="13dp"
+            android:background="@drawable/textbox_cornerline">
+        </TextView>
+        <TextView
+            android:id="@+id/Today_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="4dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textSize="17dp"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/svo_fname3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="20dp"
+            android:text="Total Orders :"
+            android:textSize="17dp"
+            android:textColor="@color/thickBrown"
+            android:padding="13dp"
+            android:background="@drawable/textbox_cornerline">
+        </TextView>
+        <TextView
+            android:id="@+id/Total_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="4dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textSize="17dp"
+            android:text="15" />
+
+        <TextView
+            android:id="@+id/svo_fname4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="20dp"
+            android:text="Accepted Orders :"
+            android:textSize="17dp"
+            android:textColor="@color/thickBrown"
+            android:padding="13dp"
+            android:background="@drawable/textbox_cornerline">
+        </TextView>
+        <TextView
+            android:id="@+id/Accepted_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="320dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="4dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textSize="17dp"
+            android:text="15" />
+
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/rl_myProflie"
+        layout="@layout/myprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_change_password"
+        layout="@layout/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_add_Event"
+        layout="@layout/add_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_add_decoration"
+        layout="@layout/add_decoration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_view_all_events"
+        layout="@layout/view_all_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_view_orders"
+        layout="@layout/view_oreders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_view_feedback"
+        layout="@layout/view_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_view_ratings"
+        layout="@layout/view_ratings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<!--    <include-->
+<!--        android:id="@+id/rl_view_customer_details"-->
+<!--        layout="@layout/view_customer_details"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+    <include
+        android:id="@+id/rl_single_view_order"
+        layout="@layout/single_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_otp_code_verification"
+        layout="@layout/otp_code_verification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_new_password"
+        layout="@layout/new_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_password_updated"
+        layout="@layout/password_updated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_update_event"
+        layout="@layout/update_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_feedback_view_details"
+        layout="@layout/feedback_view_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/rl_edit_myprofile"
+        layout="@layout/edit_myprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="735dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/event_item_bg">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="-8dp"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/artifika"
+                    android:text="View Feedback Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Feedback :"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    />
+
+                <TextView
+                    android:id="@+id/fb_view_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="2dp"
+                    android:hint="ienceyutyutyuyu  tyuyuyuyuyu ghfgggg tyyyyyyyyyyyy"
+                    android:inputType="textPersonName"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:background="@drawable/light_black_strock"
+                    android:textColor="@color/brown" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="323dp"
+                    android:layout_marginTop="230dp"
+                    android:src="@drawable/ic_arrow"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/feedback_qtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="230dp"
+                    android:padding="7dp"
+                    android:textSize="16dp"
+                    android:text="How would we improve our services ?"
+                    android:textColor="@color/brown"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginTop="300dp"
+                    android:text="Quality of work"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="300dp"
+                    android:text="Value of money"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginTop="350dp"
+                    android:text="Grand Decor"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="350dp"
+                    android:text="Professionalism"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="400dp"
+                    android:text="Classy and Elegent"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginTop="400dp"
+                    android:text="Unique idea"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="450dp"
+                    android:text="On time service"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+                <CheckBox
+                    android:id="@+id/fb_checkBox7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginTop="450dp"
+                    android:text="Accomodating"
+                    android:textColor="@color/brown"
+                    android:clickable="false"
+                    android:theme="@style/colored_checkBox"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/feedback_prog_relay"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginEnd="150dp"
+                    android:elevation="8dp">
+
+                    <ProgressBar
+                        android:id="@+id/feedback_progressbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:indeterminateTint="@color/blue" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
